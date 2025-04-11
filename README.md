@@ -46,3 +46,26 @@ For GitHub to discover any GitHub Actions workflows in your repository, you must
 
 You can give the workflow file any name you like, but you must use .yml or .yaml as the file name extension. YAML is a markup language that's commonly used for configuration files.
 ```
+* Paste the following code you your <filename>.yml
+```yml
+name: Simple CI Demo
+run-name: ${{github.actor}} is testing out GitHub Actions 
+on: [push]
+
+jobs:
+    Explore-GitHub-Actions:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "The job was automatically triggered by a ${{github.event_name}} event"
+            - run: echo "This job is running on ${{runner.os}} server hosted by GitHub"
+            - run: echo "The name of the branch is ${{github.ref}} and your repo is ${{github.repository}}"
+            - name: Check out repository code
+              uses: actions/checkout@v4
+            - name: List files in the repository
+              run: |
+                ls ${{github.workspace}}
+            - run: echo "This job's status is ${{job.status}}" 
+```
+* Commit your changes 
+- Committing the workflow file to branch in your repo triggers the push event and runs the workflow
+- To view the results of the workflow, visit your repo in GitHub and selete or click on the Actions tab in GitHub
