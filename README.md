@@ -2,8 +2,8 @@
 Simple app that utilizes github actions for CI and CD
 
 ## TOPIC / TASKS
-* Notes GitHub components <a href="#github-comps"></a>
-* Writing workflows <a href="#write-workflows"></a>
+* Notes GitHub components <a href="#github-comps">#</a>
+* Writing workflows <a href="#write-workflows">#</a>
 * Building and testing pull requests
 * Deploying your application every time a release
 * Adding a label whenever a new issue is opened
