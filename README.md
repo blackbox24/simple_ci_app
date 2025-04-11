@@ -8,7 +8,7 @@ Simple app that utilizes github actions for CI and CD
 * Deploying your application every time a release
 * Adding a label whenever a new issue is opened
 
-## NOTES GITHUB COMPS <p id="github-comps">#</p>
+## NOTES GITHUB COMPS <span id="github-comps">#</span>
 GitHub actions a triggered when an event occurs in your repo such as pull request being opened or issue being created.
 
 - WORKFLOWS: This is a configurable automated proces that will run one or more jobs. Workflows are defined by a `YAML` file checked in your repo and will run automatic or manually when an event is triggered or defined schedule. All workflows are found in `./github/workflows` directory.
@@ -22,7 +22,7 @@ GitHub actions a triggered when an event occurs in your repo such as pull reques
 - RUNNERS: This is a server that runs your workflow when triggered. Each runner can runs a job in sync. GitHub provides runners for all OS.
 You can also [host your own runner](https://docs.github.com/en/actions/hosting-your-own-runners)
 
-## WRITING WORKFLOWS <p id="write-workflows">#</p>
+## WRITING WORKFLOWS <span id="write-workflows">#</span>
 - uSING WORKFLOW TEMPLATES:
     GitHub provides reconfigured workflow templates that you can use as-is to create or customise your workflow. GitHub scans your repo to determine workflow you will need.
 
